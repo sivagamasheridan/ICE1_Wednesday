@@ -5,6 +5,8 @@
  */
 package cardgameice1;
 
+import java.util.Random;
+
 /**
  *
  * @author srinivsi
@@ -37,9 +39,18 @@ public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
     public void setValue(int value) {
         this.value = value;
     }
-//public int randomValue()
-//{
-    //int value= // 
-           // return value;
-//}
+public int randomValue()
+{
+    Random rand = new Random();
+    int value=  rand.nextInt(13)+1;
+            return value;
+}
+
+public String randomSuit()
+{
+    Random rand = new Random();
+    int value = rand.nextInt(4);
+    String suit = SUITS[value];
+    return suit;
+}
 }
