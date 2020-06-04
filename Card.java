@@ -6,7 +6,8 @@
 package Ogheneruona_Omamohwo_ICE1;
 
 /**
- *
+ *Student number:991588752
+ *Modifier: Ogheneruona Omamohwo
  * @author srinivsi
  
  private variable then refactor it
