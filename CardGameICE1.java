@@ -6,7 +6,8 @@
 package Ogheneruona_Omamohwo_ICE1;
 
 /**
- *
+ *Student number:991588752
+ *Modifier: Ogheneruona Omamohwo
  * @author srinivsi
  print 7 cards (values,suits) and takes input 
  then prints if matching card is found in an array
