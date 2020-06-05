@@ -1,45 +1,48 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package cardgameice1;
+
 
 /**
  *
- * @author srinivsi
+ * @author Kunal Sharma
  
- private variable then refactor it
- * - encapsulate fields (encapsulation principle) 
- getters/setters
  */
+import java.util.Random;
 public class Card 
 {
-  private String suits;//diamonds,clubs,spades, hearts
-  private int value; // 1 to 13
+  private String suit;//diamonds,clubs,spades, hearts
+  private String value; // 1 to 13
 public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
+public static final String[] values = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};   
+     Random r= new Random();
+    int randomValue=r.nextInt(SUITS.length);
+    int randomValue2 = r.nextInt(values.length);
     
-    public String getSuits() {
-        return suits;
+
+public String getSuits() {
+    suit = SUITS[randomValue];   
+    return suit;
     }
 
     
-    public void setSuits(String suits) {
-        this.suits = suits;
+    public void setSuits(String suit) {
+        suit = SUITS[randomValue];
+        this.suit = suit;
+        
     }
-
     
-    public int getValue() {
+    public String getValue() {
+       value = values[randomValue2];  
         return value;
     }
-
-    
-    public void setValue(int value) {
+  
+    public void setValue(String value) {
+     value = values[randomValue2];  
         this.value = value;
     }
-//public int randomValue()
-//{
-    //int value= // 
-           // return value;
-//}
+  
+    public @Override String toString()
+    {
+        return this.value + " of " + this.suit;
+    }
+      
+    
 }
