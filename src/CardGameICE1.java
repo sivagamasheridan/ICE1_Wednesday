@@ -24,14 +24,26 @@ public class CardGameICE1
         for (int i=0;i<magicHand.length;i++)
         {
            Card c= new Card();//object
-         //  c.setValue(method to generate random value from 1 to 13);
-         //  c.setSuits(method random suits);
+          c.setValue((int)(Math.random()*13)+1);
+          c.setSuits(c.SUIT[(int)(Math.random()*4)]);
            magicHand[i]=c;//saving object in array
+         System.out.println(c.getSuits()+""+c.getValue());
         }
-    //take input from user and compare with array 
-   // value=
-       //     suit =
-    
+     int value;
+     String suit;
+     System.out.println("Please enter suit?");
+     suit = input.nextLine();
+     System.out.println("Please enter a value?");
+     value = input.nextInt();
+     boolean flag = flase;
+     for(int i = 0; i< magicHand.length, i++){
+      if(value==magicHand[i].getValue()&&suit.equals(magicHand[i].getSuits()){
+       System.out.println("Your card is in the array");
+       flag = true;
+      }
+         }
+         if(flag ==flase)
+         System.out.println("Sorry your card is not in the Array?");
     }
     
 }
