@@ -2,10 +2,9 @@ package cardgameice1;
 
 /**
  *
- * @author saltatj
- * @date 2020-06-04
- print 7 cards (values,suits) and takes input 
- then prints if matching card is found in an array
+ * author saltatj
+ * date 2020-06-04
+ * Student ID: 991443396
  */
 import java.util.Scanner;
 
