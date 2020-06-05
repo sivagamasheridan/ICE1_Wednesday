@@ -4,12 +4,9 @@ import java.util.Random;
 
 /**
  *
- * @author saltatj
- * @date 2020-06-04
- 
- private variable then refactor it
- * - encapsulate fields (encapsulation principle) 
- getters/setters
+ * author saltatj
+ * date 2020-06-04
+ * Student ID: 991443396
  */
 
 public class Card 
