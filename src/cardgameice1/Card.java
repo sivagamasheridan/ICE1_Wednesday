@@ -18,15 +18,16 @@ public class Card
   private String suits;//diamonds,clubs,spades, hearts
   private int value; // 1 to 13
 public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
-    
 
+    public Card() {}
     
-    public int getValue() {
-        return value;
-    }
     public Card(int value, String suit){
         this.value = value;
         this.suits = suits;
+    }
+    
+    public int getValue() {
+        return value;
     }
     /**
      * 
@@ -44,7 +45,14 @@ public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
      * 
      * @param suits
      */
-    public void setSuit(String suits){
+    public void setSuits(String suits){
         this.suits = suits;
+    }
+    public int randomValue() {
+     return (int)(Math.ceil(Math.random()*13));     
+    }
+    
+    public String randomSuit(){
+        return SUITS[(int)(Math.round(Math.random()*3))];
     }
 }
