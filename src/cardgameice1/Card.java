@@ -20,7 +20,7 @@ public class Card
 public static final String[] SUITS={"Diamonds","Clubs","Spades","Hearts"};
     
     public String getSuits() {
-        return suits;
+        return this.suits;
     }
 
     
@@ -37,9 +37,25 @@ public static final String[] SUITS={"Diamonds","Clubs","Spades","Hearts"};
     public void setValue(int value) {
         this.value = value;
     }
+    
+    //Two random generators created for the suits and values.
+     public static String randomSuit() {
+           String suits = (Card.SUITS[(int)Math.floor(4 * Math.random())]);
+           return suits;
+       }
+     
+     public static int randomValue() {
+           int value = (int)(Math.floor(Math.random() * 13 + 1));
+           return value;
+       }
+     
+     
+    
+     
+}
 //public int randomValue()
 //{
     //int value= // 
            // return value;
 //}
-}
+

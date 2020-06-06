@@ -19,31 +19,50 @@ public class CardGameICE1
     /**
      * @param args the command line arguments
      */
+     
+      
     public static void main(String[] args)
     {
+        //Two Scanners for the two user variables
         Scanner input = new Scanner(System.in);
+        Scanner input2 = new Scanner(System.in);
         // code to generate 7 random cards and store in array
         Card[] magicHand = new Card[7];//array of object
         for (int i=0;i<magicHand.length;i++)
         {
            Card c= new Card();//object
-           c.setValue((int) Math.floor(Math.random() * 13 + 1));
-           c.setSuits(Card.SUITS[(int)Math.floor(4 * Math.random())]);
+           //the setters calling for methods that randomly generate suits and values.
+           c.setValue(Card.randomValue());
+           c.setSuits(Card.randomSuit());
            magicHand[i]=c;//saving object in array
-           System.out.println(c.getValue() + " " + c.getSuits());
+           
+           
         }
+        
+        //Two user variables for creating user card
+        int userValue;
+        String userSuit;
+        
         System.out.println("Please enter a value:");
-        int userValue = input.nextInt();
+        userValue = input.nextInt();
         System.out.println("Please enter a suit:");
-        String userSuit = input.nextLine();
+        userSuit = input2.nextLine();
         
-        while()
+        //Another for loop for comparing magicHand to user variables
+        for (int j=0; j<magicHand.length;j++) {
+            
+            //If check for whether or not the cards match.
+        if (magicHand[j].getValue() == userValue && userSuit.equals(magicHand[j].getSuits()))  {
+               System.out.println("Your card the " + magicHand[j].getValue() + " of " + magicHand[j].getSuits() + " is in the hand!");
+           } 
+        }
         
-       
-    //take input from user and compare with array 
-   // value=
-       //     suit =
-    //Need to make a method to generate random values
+        }
     }
+   
     
-}
+
+    
+
+  
+
