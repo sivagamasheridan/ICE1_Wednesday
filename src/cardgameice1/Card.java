@@ -8,6 +8,7 @@ package cardgameice1;
 /**
  *
  * @author srinivsi
+ * @modifier parita_bhatt
  
  private variable then refactor it
  * - encapsulate fields (encapsulation principle) 
@@ -22,12 +23,8 @@ public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
 
     
     public int getValue() {
-        return value;
-    }
-    public Card(int value, String suit){
-        this.value = value;
-        this.suits = suits;
-    }
+        return value;}
+    
     /**
      * 
      * @param value 
@@ -44,7 +41,13 @@ public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
      * 
      * @param suits
      */
-    public void setSuit(String suits){
+    public void setSuits(String suits){
         this.suits = suits;
     }
-}
+    
+    
+
+    
+        
+    }
+
