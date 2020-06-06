@@ -9,6 +9,7 @@ package cardgameice1;
  *
  * @author srinivsi
  * modifier @parita_bhatt
+ * Student Number: 991585364
  print 7 cards (values,suits) and takes input 
  then prints if matching card is found in an array
  */
