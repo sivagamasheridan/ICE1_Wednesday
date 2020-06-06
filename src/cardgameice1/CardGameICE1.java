@@ -1,4 +1,5 @@
 /*
+student id: 991589493
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -7,7 +8,7 @@ package cardgameice1;
 
 /**
  *
- * @author srinivsi
+ * @author aditi
  print 7 cards (values,suits) and takes input 
  then prints if matching card is found in an array
  */
@@ -51,7 +52,7 @@ public class CardGameICE1
             }
         }
         if (x== false){
-            System.out.println("Your card didn't match");
+            System.out.println("Your card didn't match. Good luck for next time!!");
         }
 
         }
