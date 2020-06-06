@@ -8,6 +8,8 @@ package cardgameice1;
 /**
  *
  * @author srinivsi
+ * @author yetmanj999
+ * Student id: 991354488
  
  private variable then refactor it
  * - encapsulate fields (encapsulation principle) 
