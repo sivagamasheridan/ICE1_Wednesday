@@ -10,6 +10,9 @@ import java.util.Scanner;
  * @author srinivsi
  print 7 cards (values,suits) and takes input 
  then prints if matching card is found in an array
+ *@ modifier Parminder Kaur Puri
+ * Studnet ID: 991586782
+ 
  */
 public class CardGameICE1
 {
