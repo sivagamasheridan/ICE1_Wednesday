@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package cardgameice1;
-
+import java.util.Scanner;
 /**
  *
  * @author srinivsi
@@ -21,17 +21,31 @@ public class CardGameICE1
     {
         // code to generate 7 random cards and store in array
         Card[] magicHand = new Card[7];//array of object
+        Scanner sc = new Scanner(System.in);
         for (int i=0;i<magicHand.length;i++)
         {
            Card c= new Card();//object
-         //  c.setValue(method to generate random value from 1 to 13);
-         //  c.setSuits(method random suits);
+          c.setValue((int)(Math.random()*13)+1);
+          c.setSuits(c.SUITS[(int)(Math.random()*4)]);
            magicHand[i]=c;//saving object in array
+           System.out.println(c.getSuits()+""+c.getValue());
         }
-    //take input from user and compare with array 
-   // value=
-       //     suit =
-    
+        int value;
+        String suit;
+         System.out.println("Enter the suit:");
+          suit = sc.nextLine();
+        System.out.println("Enter the value:");
+        value = sc.nextInt();
+
+        boolean par = false;
+        for(int i = 0; i < magicHand.length; i++) {
+            if (value == magicHand[i].getValue() && suit.equals(magicHand[i].getSuits())) {
+                System.out.println("Your card is in magic hands ");
+                par=true;
+            }
+        }
+        if(par==false)
+            System.out.println("Your card is not in magic hands");
+       
     }
-    
 }
