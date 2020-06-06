@@ -8,6 +8,8 @@ package cardgameice1;
 /**
  *
  * @author srinivsi
+ * @author yetmanj999
+ * Student id: 991354488
  print 7 cards (values,suits) and takes input 
  then prints if matching card is found in an array
  */
