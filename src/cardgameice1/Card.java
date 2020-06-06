@@ -9,6 +9,7 @@ package cardgameice1;
  *
  * @author sandeep kaur
  
+ 
  private variable then refactor it
  * - encapsulate fields (encapsulation principle) 
  betters/setters
