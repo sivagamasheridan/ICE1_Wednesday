@@ -26,8 +26,7 @@ public class CardGameICE1
         // code to generate 7 random cards and store in array
         int comp= (int)Math.floor(Math.random()*13+1);
         
-        int meValue;
-        String meSuits;
+     
         Card obj=new Card();
          Card c= new Card();//object
         
@@ -48,20 +47,21 @@ public class CardGameICE1
         String suitss=scan.next();
         
         System.out.println("Please enter card number");
-        int value=scan.nextInt();
+        int valueNum=scan.nextInt();
         
         boolean check=false;
         int counter=0;
         
         for(int i=0;i<magicHand.length;i++){
-            if(value==magicHand[i].getValue()&&suitss.equals(magicHand[i].getSuits())){
+            if(magicHand[i].getValue()==valueNum&&suitss.equals(magicHand[i].getSuits())){
                 System.out.println("your card is in the array");
                 check=true;
                 break;
             }
-            if(check==false){
-                System.out.println("not in array");
+            
             }
+        if(check==false){
+                System.out.println("your card is not in array");
         }
       
         
