@@ -9,7 +9,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 /**
  *
- * @author srinivsi
+ * @author KiratMehta
  print 7 cards (values,suits) and takes input 
  then prints if matching card is found in an array
  */
@@ -31,32 +31,17 @@ public class CardGameICE1
         Card obj=new Card();
          Card c= new Card();//object
         
-//        System.out.println(comp);
-//        System.out.println(comp2);
+
         Card[] magicHand = new Card[7];//array of object
         for (int i=0;i<magicHand.length;i++)
         {
           int comp2=(int)Math.floor(Math.random()*4+1);
          c.setValue(((int)(Math.random()*13)+1));
-         
-         if(comp2==1){
-             c.setSuits("Diamonds");
-         }
-         else if(comp2==2){
-             c.setSuits("clubs");
-         }
-         else if(comp2==3){
-             c.setSuits("spades");
-         }
-         else
-             c.setSuits("hearts");
-         //  c.setSuits(comp2);
-         //  c.setValue(method to generate random value from 1 to 13);
-         //  c.setSuits(method random suits);
+         c.setSuits(c.SUITS[(int)(Math.random()*4)]);
+        
            magicHand[i]=c;//saving object in array
-           meValue=magicHand[i].getValue();
-           meSuits=magicHand[i].getSuits();
-           System.out.println(meSuits+" "+meValue);
+           
+           System.out.println(c.getSuits()+" "+c.getValue());
         }
         
          System.out.println("enter suit");
@@ -65,6 +50,19 @@ public class CardGameICE1
         System.out.println("Please enter card number");
         int value=scan.nextInt();
         
+        boolean check=false;
+        int counter=0;
+        
+        for(int i=0;i<magicHand.length;i++){
+            if(value==magicHand[i].getValue()&&suitss.equals(magicHand[i].getSuits())){
+                System.out.println("your card is in the array");
+                check=true;
+                break;
+            }
+            if(check==false){
+                System.out.println("not in array");
+            }
+        }
       
         
         
