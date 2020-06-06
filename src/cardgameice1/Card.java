@@ -17,7 +17,7 @@ public class Card
 {
   private String suits;//diamonds,clubs,spades, hearts
   private int value; // 1 to 13
-public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
+private String[] SUITS={"diamonds","clubs","spades","hearts"};
     
     public String getSuits() {
         return suits;
@@ -37,9 +37,7 @@ public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
     public void setValue(int value) {
         this.value = value;
     }
-//public int randomValue()
-//{
-    //int value= // 
-           // return value;
-//}
+    
+     
+       
 }
