@@ -47,4 +47,22 @@ public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
     public void setSuit(String suits){
         this.suits = suits;
     }
+        public Card createMagicCard()
+            {
+                this.setValue(randomValue());
+                        this.setSuit(randomSuit());
+                        return this;
+            }
+
+        public int randomValue()
+{
+    
+     return (int)(Math.ceil(Math.random()*13));   
+    }
+
+    public String randomSuit()
+{
+    return SUITS[(int)(Math.round(Math.random()*3))];  
+
+    }
 }

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package cardgameice1;
-
+import java.util.Scanner;
 /**
  *
  * @author srinivsi
@@ -19,31 +19,42 @@ public class CardGameICE1
      */
     public static void main(String[] args)
     {
+        Scanner input = new Scanner(System.in);
+        
         // code to generate 7 random cards and store in array
         Card[] magicHand = new Card[7];//array of object
+        
         for (int i=0;i<magicHand.length;i++)
         {
            Card c= new Card();//object
-          c.setValue((int)(Math.random()*13)+1);
-          c.setSuits(c.SUIT[(int)(Math.random()*4)]);
+           c.setValue(c.randomValue());
+           c.setSuits(c.randomSuit());
            magicHand[i]=c;//saving object in array
-         System.out.println(c.getSuits()+""+c.getValue());
+           System.out.println(c.getSuits());
+            System.out.println(c.getValue());
         }
-     int value;
-     String suit;
-     System.out.println("Please enter suit?");
-     suit = input.nextLine();
-     System.out.println("Please enter a value?");
-     value = input.nextInt();
-     boolean flag = flase;
-     for(int i = 0; i< magicHand.length, i++){
-      if(value==magicHand[i].getValue()&&suit.equals(magicHand[i].getSuits()){
-       System.out.println("Your card is in the array");
-       flag = true;
-      }
-         }
-         if(flag ==flase)
-         System.out.println("Sorry your card is not in the Array?");
+        
+        //take input from user 
+        System.out.println("Pick a suit(diamonds, spades, hearts, clubs): ");
+        String suit = input.nextLine();
+   
+        System.out.println("Choose value of card(1-13): ");
+        int value = input.nextInt();
+            
+        boolean cardMatch = false;
+        
+        for (int i = 0; i<magicHand.length; i++) {
+            if (value == magicHand[i].getValue() &&
+                    suit.equalsIgnoreCase(magicHand[i].getSuits())) {
+                cardMatch = true;
+                System.out.println("The card matched with the computer");
+                break;
+            }
+        }
+if (cardMatch == false){
+            System.out.println("It did not match.Better luck next time!!");
+        }
     }
-    
 }
+    
+
