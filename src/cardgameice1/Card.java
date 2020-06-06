@@ -7,44 +7,42 @@ package cardgameice1;
 
 /**
  *
- * @author srinivsi
- 
- private variable then refactor it
- * - encapsulate fields (encapsulation principle) 
- betters/setters
+ * @author hp
  */
-public class Card 
-{
-  private String suits;//diamonds,clubs,spades, hearts
-  private int value; // 1 to 13
-public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
-    
+public class Card {
+    private String suits;
+    private int value;
+    public static final String[] SUITS ={"diamonds","clubs","spades","hearts"};
 
-    
+    /**
+     * @return the suits
+     */
+    public String getSuits() {
+        return suits;
+    }
+
+    /**
+     * @param suits the suits to set
+     */
+    public void setSuits(String suits) {
+        this.suits = suits;
+    }
+
+    /**
+     * @return the value
+     */
     public int getValue() {
         return value;
     }
-    public Card(int value, String suit){
-        this.value = value;
-        this.suits = suits;
-    }
+
     /**
-     * 
-     * @param value 
+     * @param value the value to set
      */
-    
     public void setValue(int value) {
         this.value = value;
     }
     
-    public String getSuits(){
-        return this.suits;
-    }
-    /**
-     * 
-     * @param suits
-     */
-    public void setSuit(String suits){
-        this.suits = suits;
-    }
+    
+}
+    
 }
