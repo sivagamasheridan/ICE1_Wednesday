@@ -6,7 +6,8 @@
 package cardgameice1;
 
 /**
- *
+ *Kirandeep Kaur
+ Student Id - 991591402
  * @author hp
  */
 public class Card {
