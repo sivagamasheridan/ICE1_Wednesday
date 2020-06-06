@@ -1,4 +1,5 @@
 /*
+ * Student ID: 991585936
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -7,7 +8,7 @@ package cardgameice1;
 
 /**
  *
- * @author srinivsi
+ * @author Ratidner Singh Bhullar
  
  private variable then refactor it
  * - encapsulate fields (encapsulation principle) 
