@@ -1,4 +1,5 @@
 /*
+ * Student ID: 991585936
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -9,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author srinivsi
+ * @author Ratinder Singh Bhullar
  print 7 cards (values,suits) and takes input 
  then prints if matching card is found in an array
  */
