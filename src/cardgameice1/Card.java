@@ -1,13 +1,13 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Kirat Mehta
+ * ICE1 Assignment
+ * Student Id- 991587670
  */
 package cardgameice1;
 
 /**
  *
- * @author srinivsi
+ * @author KiratMehta
  
  private variable then refactor it
  * - encapsulate fields (encapsulation principle) 
